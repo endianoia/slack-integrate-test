@@ -4,8 +4,8 @@
 
     $mail = new SendGrid\Email();
     $mail
-        ->addTo('[送信先メールアドレス]')
-        ->setFrom('[送信元メールアドレス]')
+        ->addTo('[wasuremono.7z@gmail.com]')
+        ->setFrom('[wasuremono7z@gmail.com]')
         ->setSubject('[タイトル]')
         ->setText('[本文]')
     ;
