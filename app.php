@@ -16,7 +16,7 @@ if ($_POST) {
     $mail = new SendGrid\Email();
     $mail
         ->addTo($addTo)
-        ->setFrom('from@example.com')
+        ->setFrom('slack@example.com')
         ->setSubject($setSubject)
         ->setText($setText)
     ;
