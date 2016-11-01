@@ -23,7 +23,9 @@ if ($_POST) {
 
     $result = $sendgrid->send($mail);
     if ($result = '200') {
-        echo json_encode(array('text' => '送信しました！'));
+        echo json_encode(array('text' => '送信完了！'));
+    }else{
+        echo json_encode(array('text' => '送信失敗です'));
     }
 }
 
